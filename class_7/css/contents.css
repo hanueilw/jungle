@@ -4,6 +4,7 @@
  padding:5px;
  font-size:13px;
  color:#333;
+ box-sizing:border-box;
 }
 
 .chat_area{
