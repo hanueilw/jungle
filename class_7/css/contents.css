@@ -16,7 +16,7 @@
 
 /* 메세지 */
 .chat_area .item{}
-.chat_area .item{} + .item{
+.chat_area .item{}+.item{
     margin-top: 15px;
 }
 
@@ -94,4 +94,15 @@
 
 .input_area input[type="text"]::placeholder{
     color:#999;
+}
+
+@media all and (max-width:640px){
+    .wrap{
+        width:auto;
+        border:0; 
+    } 
+    .chat_area{
+        height:calc(100vh);
+        box-sizing: border-box;
+    }
 }
