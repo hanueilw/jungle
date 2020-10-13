@@ -16,8 +16,18 @@
 }
 
 /* 메세지 */
-.chat_area .item{}
-.chat_area .item{}+.item{
+.chat_area .item{
+    opacity: 0; 
+    transform: translateX(10px);
+    transition: transform 0.3s ease-out;
+}
+
+.chat_area .item.on{
+    opacity: 1;
+    transform:translateX(0px) !important;
+}
+
+.chat_area .item +.item{
     margin-top: 15px;
 }
 
@@ -56,6 +66,7 @@
 /* 나의메세지 */
 .chat_area .item.mymsg{
     text-align: right; 
+    transform:translateX(-10px);
 }
 
 .chat_area .item.mymsg .box .msg{
