@@ -101,6 +101,7 @@
         width:auto;
         border:0; 
     } 
+    html, body, .wrap{height:100%}
     .chat_area{
         height:calc(100vh);
         box-sizing: border-box;
