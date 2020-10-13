@@ -100,11 +100,16 @@
 @media all and (max-width:640px){
     .wrap{
         width:auto;
-        border:0; 
+        border:0;
+        font-size: 15px;
     } 
     html, body, .wrap{height:100%}
     .chat_area{
         height:calc(100vh);
         box-sizing: border-box;
+    }
+
+    .chat_area .item.mymsg .box .time{
+        font-size: 13px;
     }
 }
