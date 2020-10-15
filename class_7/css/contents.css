@@ -113,14 +113,19 @@
         width:auto;
         border:0;
         font-size: 15px;
+        padding-bottom: 75px;
     } 
     html, body, .wrap{height:100%}
     .chat_area{
-        height:calc(100vh);
+        height:100%;
         box-sizing: border-box;
     }
 
     .chat_area .item.mymsg .box .time{
         font-size: 13px;
+    }
+
+    .input_area input[type="text"]{
+        font-size: 15px;
     }
 }
