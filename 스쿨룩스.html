@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<!-- saved from url=(0026)https://www.skoolooks.com/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ko" xml:lang="ko" xmlns:fb="http://ogp.me/ns/fb#" xmlns:og="http://ogp.me/ns#"><head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/fb/website#"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+<script async="" src="./스쿨룩스_files/bstrk.1.js.다운로드"></script><script async="" src="./스쿨룩스_files/analytics.js.다운로드"></script><script async="" src="./스쿨룩스_files/fbevents.js.다운로드"></script><script nonce="sqp4GDICI68anSjOOYKWU9DmbSqBzHdmPkZO3O/OCzE=">window.Firstmall = window.Firstmall || {};
+window.Firstmall.Config = {"Environment":{"MobileMode":false,"SetMode":null,"Language":"KR","Currency":{"Basic":{"Id":"KRW","Symbol":"원","Position":"after"},"Skin":{"Id":"KRW","Symbol":"원","Position":"after"}},"serviceLimit":{"H_FR":false,"H_AD":false},"OperationType":"heavy","Protocol":"https","CacheBreaker":null},"Security":{"PreventDrag":false,"PreventContextMenu":false},"Search":{"AutoComplete":true,"Suggest":false}};
+(function(){ var aliases = {"gl_operation_type":window.Firstmall.Config.Environment.OperationType,"gl_mobile_mode":window.Firstmall.Config.Environment.MobileMode,"gl_set_mode":window.Firstmall.Config.Environment.SetMode,"gl_language":window.Firstmall.Config.Environment.Language,"gl_basic_currency":window.Firstmall.Config.Environment.Currency.Basic.Id,"gl_skin_currency":window.Firstmall.Config.Environment.Currency.Skin.Id,"gl_basic_currency_symbol":window.Firstmall.Config.Environment.Currency.Basic.Symbol,"gl_basic_currency_symbol_position":window.Firstmall.Config.Environment.Currency.Basic.Position,"gl_protocol":window.Firstmall.Config.Environment.Protocol+"://"}; for(var attr in aliases) { window[attr] = aliases[attr]; }})();</script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>스쿨룩스</title>
+
+	<!-- SEO 설정이 있을경우 -->
+		<!-- 일반 :: viskit : 20206005 -->
+		<meta name="Robots" content="index,follow">
+<meta name="title" content="스쿨룩스">
+<meta name="author" content="(주)더엔진">
+<meta name="description" content="즐거운 스쿨라이프를 위한 온라인 스토어, 마켓스쿨">
+<meta name="keywords" content="스쿨룩스, 스쿨룩스 마켓스쿨, 디즈니 교복">
+
+<meta property="og:url" content="https://www.skoolooks.com/">
+<meta property="og:site_name" content="스쿨룩스">
+
+	<!-- 일반 :: viskit : 20206005 -->
+	<meta property="og:title" content="스쿨룩스">
+		<meta property="og:description" content="교복의 절반은 디자인">
+
+	<meta property="fb:app_id" content="1378971935593484">
+		<meta property="og:type" content="website">
+
+		<!-- 일반 :: viskit : 20206005 -->
+		<meta property="og:image" content="https://www.skoolooks.com/data/icon/favicon/snslogo.jpg?1602756340">
+		<link rel="image_src" href="https://www.skoolooks.com/data/icon/favicon/snslogo.jpg?1602756340">
+<link rel="canonical" href="https://www.skoolooks.com/">
+
+<meta name="naver-site-verification" content="aab09e3150a695c5e18eaa4beb20521b9452aa90">
+<script type="application/ld+json">
+	{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "스쿨룩스",
+		"url": "https://www.skoolooks.com",
+		"sameAs": [
+			"http://blog.naver.com/skoolooks3",
+			"https://www.instagram.com/skoolooks_insta/",
+			"https://www.facebook.com/skoolooks",
+			"https://www.youtube.com/user/skoolooks1318"
+		]
+	}
+	</script>
+
+<!-- CSS -->
+<!-- <link rel="stylesheet" type="text/css" href="/data/font/font.css" />
+<link rel="stylesheet" type="text/css" href="/data/skin/skoolooks/css/style.css" /> -->
+<!-- 파비콘 -->
+<link rel="shortcut icon" href="https://www.skoolooks.com//data/icon/favicon/favicon1573131915.ico">
+<!-- /CSS -->
+<!-- 자바스크립트 -->
+<script type="text/javascript" src="./스쿨룩스_files/jquery.min.js.다운로드"></script>
+<script type="text/javascript" src="./스쿨룩스_files/jquery-ui.min.js.다운로드"></script>
+<script type="text/javascript" src="./스쿨룩스_files/jquery.poshytip.min.js.다운로드"></script>
+<script type="text/javascript" src="./스쿨룩스_files/jquery.activity-indicator-1.0.0.min.js.다운로드"></script>
+<script type="text/javascript" src="./스쿨룩스_files/jquery.cookie.js.다운로드"></script>
+<script type="text/javascript" src="./스쿨룩스_files/jquery.slides.min.js.다운로드"></script>
+<script type="text/javascript" src="./스쿨룩스_files/jquery.bxslider.js.다운로드"></script>
+<script type="text/javascript" src="./스쿨룩스_files/jquery.placeholder.js.다운로드"></script>
+<script type="text/javascript" src="./스쿨룩스_files/custom-select-box.js.다운로드"></script>
+<script type="text/javascript" src="./스쿨룩스_files/jquery.sprintf.js.다운로드"></script>
+<script type="text/javascript" src="./스쿨룩스_files/L10n_KR.js.다운로드"></script>
+<script type="text/javascript" src="./스쿨룩스_files/common.js.다운로드"></script><script type="text/javascript" src="./스쿨룩스_files/common-function.js.다운로드"></script>
+<script type="text/javascript" src="./스쿨룩스_files/front-layout.js.다운로드"></script><script src="./스쿨룩스_files/echo.js.다운로드"></script>
+<script type="text/javascript" src="./스쿨룩스_files/base64.js.다운로드"></script>
+<script type="text/javascript" src="./스쿨룩스_files/goods-display.js.다운로드"></script>
+<script type="text/javascript" src="./스쿨룩스_files/board-display.js.다운로드"></script>
+<script type="text/javascript" src="./스쿨룩스_files/script.js.다운로드"></script>
+<script type="text/javascript">
+	var gl_mobile_mode	= 0;
+	var gl_set_mode		= '';
+	var gl_language		= 'KR';
+	var gl_basic_currency					= "KRW";
+	var gl_skin_currency					= "KRW";
+	var gl_basic_currency_symbol			= "원";
+	var gl_basic_currency_symbol_position	= "after";
+
+	$(function(){
+
+		$('form#topSearchForm input[name=search_text]').eq(0).bind("focusin keyup",function(event){
+			var obj  = $(this);
+			setTimeout(function(){
+				autocomplete(obj.val());
+			},100);
+		});
+		$('form#topSearchForm input[name=search_text]').eq(0).bind("blur",function(){
+			setTimeout(function(){$('#autocomplete').hide();}, 500);
+		});
+	});
+
+		function skls_changePass(){
+			if($(".wrapModalPopup").length === 0){
+				$("body").append('<div class="wrapModalPopup"><div class="wrapModalMask"/><div class="wrapModalContainer"/></div>');
+			}
+			$("#changePassForm").appendTo(".wrapModalContainer");
+
+			popchangepass = new wrapModalPopup("#changePassForm", "body", function(){
+				$("#changePassForm .btn_popup_close").click(function(){
+					popchangepass.close();
+					return false;
+				});
+			});
+		}
+
+		function skls_changePassCheck(targ){
+			var newpw = $("#changepw_new_password").val();
+			var re_newpw = $("#changepw_re_new_password").val();
+
+			if(newpw.length > 0){
+				if(re_newpw.length > 0){
+					if(newpw != re_newpw){
+						$(".popup_changepw_comm .input_chk_pw").text("새 비밀번호가 일치하지 않습니다.");
+						$(".popup_changepw_comm .input_chk_pw").show();
+					}else{
+						$(".popup_changepw_comm .input_chk_pw").hide();
+						$(".popup_changepw_comm .input_chk_pw").empty();
+					}
+				}else{
+					$(".popup_changepw_comm .input_chk_pw").hide();
+					$(".popup_changepw_comm .input_chk_pw").empty();
+				}
+			}else{
+				if(re_newpw.length > 0){
+					$(".popup_changepw_comm .input_chk_pw").text("새 비밀번호를 입력해주세요.");
+					$(".popup_changepw_comm .input_chk_pw").show();
+				}else{
+					$(".popup_changepw_comm .input_chk_pw").hide();
+					$(".popup_changepw_comm .input_chk_pw").empty();
+				}
+			}
+
+			maxLengthCheck(targ);
+		}
+
+		function skls_passwordAfterUpdate(){
+			$("input[name='old_password']").val('').attr("disabled",true);
+			$("input[name='new_password']").val('').attr("disabled",true);
+			$("input[name='re_new_password']").val('').attr("disabled",true);
+
+			$("input[name='password_mode']").val('after');
+			$("input[name='update_rate']").val('Y');
+
+			$('#passUpdateForm').submit();
+		}
+
+		function skls_changePassSubmit(){
+			if($("input[name='password_mode']").val() == "update"){
+				var pw1 = $("#changepw_new_password").val();
+				var pwNum_chk1 = pw1.search(/[0-9]/);
+				var pwEng_chk1 = pw1.search(/[A-Za-z]/);
+				var pwSpe_chk1 = pw1.search(/[~`!@#$%\^&*()-+=]/);
+
+				var pw2 = $("#changepw_re_new_password").val();
+
+				if($("#changepw_old_password").val() == ""){
+					alert("현재 비밀번호를 입력해주세요.");
+					$("#changepw_old_password").focus();
+
+					return false;
+				}
+
+				if($("#changepw_new_password").val() == ""){
+					alert("새 비밀번호를 입력해주세요.");
+					$("#changepw_new_password").focus();
+
+					return false;
+				}else if(((pwNum_chk1 < 0 && pwEng_chk1 < 0) || (pwEng_chk1 < 0 && pwSpe_chk1 < 0) || (pwSpe_chk1 < 0 && pwNum_chk1 < 0)) || pw1.length < 6 || pw1.length > 20){
+					alert("새 비밀번호를 정확히 입력해주세요.");
+					$("#changepw_new_password").val("");
+					$("#changepw_new_password").focus();
+
+					return false;
+				}
+
+				if($("#changepw_re_new_password").val() == ""){
+					alert("새 비밀번호를 확인해주세요.");
+					$("#changepw_re_new_password").focus();
+
+					return false;
+				}else if($("#changepw_new_password").val() != $("#changepw_re_new_password").val()){
+					alert("새 비밀번호가 일치하지 않습니다.");
+					$("#changepw_re_new_password").val("");
+					$("#changepw_re_new_password").focus();
+
+					return false;
+				}
+
+				var msg="다시 한번 확인해주세요! 입력하신 내용으로 정보변경을 하시겠습니까?";
+				if( confirm(msg) ){
+					return;
+				}else{
+					return false;
+				}
+			}
+		}
+</script>
+<style type="text/css">
+	/* 레이아웃설정 폰트 적용 */
+	#layout_body * {
+	}
+
+	/* 레이아웃설정 스크롤바색상 적용 */
+</style>
+
+<!--[ 네이버 공통유입 스크립트 ]-->
+<script type="text/javascript" src="./스쿨룩스_files/wcslog.js.다운로드"></script><script type="text/javascript">
+	if(!wcs_add) var wcs_add = {};
+	wcs_add["wa"] = "s_1f11464e9516";
+		wcs.checkoutWhitelist = ["www.skoolooks.com","m.skoolooks.com","skoolooks.com"]; // 체크아웃 White list가 있을 경우
+			wcs.inflow('skoolooks.com');
+			$(window).load(function() {
+		wcs_do(); // 로그 수집 함수 (페이지 로딩후 실행됩니다)
+	});
+</script>
+
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '267745261088035');
+fbq('init', '174630979557696');
+fbq('init', '2828695010570810');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=267745261088035&ev=PageView&noscript=1"
+/></noscript>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=174630979557696&ev=PageView&noscript=1"
+/></noscript>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=2828695010570810&ev=PageView&noscript=1"
+/></noscript>
+<!-- DO NOT MODIFY -->
+<!-- End Facebook Pixel Code -->
+
+<!-- /자바스크립트 -->
+<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-92406104-1', 'auto');
+			ga_require_ec = false;
+			ga('send', 'pageview');
+			</script><script src="./스쿨룩스_files/jquery.bxslider.js(1).다운로드"></script>
+</head>
+
+<body>
+
+
+<!-- viskit -->
+<link href="./스쿨룩스_files/css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="./스쿨룩스_files/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="./스쿨룩스_files/jquery.bxslider.css">
+<link rel="stylesheet" href="./스쿨룩스_files/common.css">
+
+<script type="text/javascript" src="./스쿨룩스_files/html5shiv.min.js.다운로드"></script>
+<script type="text/javascript" src="./스쿨룩스_files/wrapModalPopup.js.다운로드"></script>
+<script type="text/javascript" src="./스쿨룩스_files/common.js(1).다운로드"></script>
+
+<div id="layout_wrap">
+<header style="background-image: none;">
+	<div class="header_top">
+		<div class="header_inner">
+			<h1 class="logo white"><a href="https://www.skoolooks.com/"><img src="./스쿨룩스_files/img_logo.png" alt="스쿨룩스 로고"></a></h1>
+			<a href="https://www.skoolooks.com/#" class="btn_nav white"><img src="./스쿨룩스_files/btn_nav.png" alt="메뉴"></a>
+			<a href="https://www.skoolooks.com/order/cart" class="btn_shopping white">
+				<img src="./스쿨룩스_files/btn_shopping.png" alt="쇼핑몰">
+				<div class="alert_count right_cart_total">0</div>
+			</a>
+		</div>
+	</div>
+	<div class="header_scroll">
+		<div class="header_inner">
+			<h1 class="logo ornage"><a href="https://www.skoolooks.com/"><img src="./스쿨룩스_files/img_logo_o.png" alt="스쿨룩스 로고"></a></h1>
+			<a href="https://www.skoolooks.com/#" class="btn_nav black"><img src="./스쿨룩스_files/btn_nav_b.png" alt="메뉴"></a>
+			<a href="https://www.skoolooks.com/order/cart" class="btn_shopping black">
+				<img src="./스쿨룩스_files/btn_shopping_b.png" alt="쇼핑몰">
+				<div class="alert_count right_cart_total">0</div>
+			</a>
+		</div>
+	</div>
+
+	<div class="bg_nav"></div>
+
+	<nav class="menu">
+		<a href="https://www.skoolooks.com/#" class="btn_nav_close"><img src="./스쿨룩스_files/btn_nav_close.png" alt="닫기"></a>
+
+		<div class="nav_login_box">
+			<div class="nav_not_login">
+				<p>안녕하세요 스쿨룩스 입니다!<br><a href="https://www.skoolooks.com/member/login" class="btn_nav_login_tx">로그인</a> 하시면 스쿨룩스를 보다 편리하게<br>이용하실 수 있습니다.</p>
+			</div>
+		</div>
+
+		<div class="nav_dep_Box">
+			<div class="nav_dep_1">
+				<a href="https://www.skoolooks.com/#" class="btn_nav_lineup">라인업</a>
+				<a href="https://www.skoolooks.com/#" class="btn_nav_market">마켓스쿨</a>
+				<!-- <a href="#" class="btn_nav_rookie">스쿨루키</a> -->
+				<a href="https://www.skoolooks.com/#" class="btn_nav_brand">브랜드</a>
+				<a href="https://www.skoolooks.com/#" class="btn_nav_event">이벤트</a>
+				<a href="https://www.skoolooks.com/#" class="btn_nav_cust">고객센터</a>
+			</div>
+
+			<div class="nav_dep_2">
+				<div class="nav_dep_2_list lineup">
+					<a href="https://www.skoolooks.com/skls/lineupComfort">편한교복 스타일</a>
+					<a href="https://www.skoolooks.com/skls/lineupSuitGirlSummer">정장하복 스타일</a>
+					<a href="https://www.skoolooks.com/skls/lineupSuitGirl">정장동복 스타일</a>
+					<a href="https://www.skoolooks.com/skls/lineupLookbook">디자인 룩북</a>
+				</div>
+				<div class="nav_dep_2_list market">
+					<div class="designCategoryNavigation" id="categoryNavigation5f881ef4e66ca" designelement="categoryNavigation" templatepath="main/index.html"><style>
+	#categoryNavigation5f881ef4e66ca a {height:50px;line-height:50px;}
+</style>
+
+<a href="https://www.skoolooks.com/goods/brand?code=0003">이달의 PICK</a>
+<a href="https://www.skoolooks.com/skls/goodsBrandEnd" onclick="alert(&#39;준비중입니다.&#39;);return false;">지난 PICK</a>
+
+	<a href="https://www.skoolooks.com/goods/catalog?code=0002" data-code="0002">ALL</a>
+
+			<a href="https://www.skoolooks.com/goods/catalog?code=00020003" data-code="00020003">문구</a>
+</div>
+				</div>
+				<!-- <div class="nav_dep_2_list rookie">
+					<a href="#"></a>
+				</div> -->
+				<div class="nav_dep_2_list brand">
+					<a href="https://www.skoolooks.com/skls/brandStory">브랜드스토리</a>
+					<a href="https://www.skoolooks.com/skls/brandDesign">스쿨룩 랩</a>
+					<a href="https://www.skoolooks.com/skls/brandSafe">교복안심 시스템</a>
+					<a href="https://www.skoolooks.com/skls/brandHope">희망더하기 캠페인</a>
+				</div>
+				<div class="nav_dep_2_list event">
+					<a href="https://www.skoolooks.com/skls_event/ing">이벤트</a>
+					<a href="https://www.skoolooks.com/skls_event/winner">당첨자 발표</a>
+				</div>
+				<div class="nav_dep_2_list cust">
+					<a href="https://www.skoolooks.com/board/?id=faq">자주 묻는 질문</a>
+					<a href="https://www.skoolooks.com/mypage/myqna_write">1:1 문의</a>
+					<a href="https://www.skoolooks.com/skls/findstore">매장찾기</a>
+					<a href="https://www.skoolooks.com/board/?id=notice">공지사항</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="nav_link_box">
+			<a href="http://www.skoolooksblog.com/" target="_blank" class="btn_nav_link_blog"><img src="./스쿨룩스_files/icon_blog.png" alt="블로그"></a>
+			<a href="https://www.facebook.com/skoolooks" target="_blank" class="btn_nav_link_fb"><img src="./스쿨룩스_files/icon_fb.png" alt="페이스북"></a>
+			<a href="https://www.instagram.com/skoolooks_insta" target="_blank" class="btn_nav_link_insta"><img src="./스쿨룩스_files/icon_insta.png" alt="인스타그램"></a>
+			<a href="https://www.youtube.com/user/skoolooks1318" target="_blank" class="btn_nav_link_youtube"><img src="./스쿨룩스_files/icon_youtube.png" alt="유튜브"></a>
+		</div>
+
+		<div class="nav_btn_login_box">
+			<a href="https://www.skoolooks.com/member/login" class="btn_nav_login">로그인</a>
+		</div>
+	</nav>
+</header>
+
+<section class="contents" id="main">
+    <div class="bg_main_slide" style="background-color: rgb(248, 152, 40);"></div>
+
+    <div class="main_inner">
+        <div class="bx-wrapper" style="max-width: 2369px;"><div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 580px;"><div class="bxslider" style="width: 815%; position: relative; transition-duration: 0.7s; transform: translate3d(-5156px, 0px, 0px); margin-left: 219.5px;"><div style="float: left; list-style: none; position: relative; width: 1080px; margin-right: 209px;" class="bx-clone"><a href="https://www.skoolooks.com/goods/catalog?code=000200030002"><img src="./스쿨룩스_files/img_main_banner_15.jpg" alt=""></a></div><div style="float: left; list-style: none; position: relative; width: 1080px; margin-right: 209px;" class="bx-clone"><a href="http://blog.naver.com/skoolooks3/222086491291" target="_blank"><img src="./스쿨룩스_files/img_main_banner_16.jpg" alt=""></a></div>
+            <div style="float: left; list-style: none; position: relative; width: 1080px; margin-right: 209px;"><a href="https://www.skoolooks.com/goods/brand?code=0003"><img src="./스쿨룩스_files/img_main_banner_18.jpg" alt=""></a></div>
+            <div style="float: left; list-style: none; position: relative; width: 1080px; margin-right: 209px;"><a href="https://skoolooks.com/board/view?id=notice&amp;seq=641"><img src="./스쿨룩스_files/img_main_banner_12.jpg" alt=""></a></div>
+            <div style="float: left; list-style: none; position: relative; width: 1080px; margin-right: 209px;"><a href="https://www.skoolooks.com/goods/catalog?code=000200030001"><img src="./스쿨룩스_files/img_main_banner_13.jpg" alt=""></a></div>
+            <div style="float: left; list-style: none; position: relative; width: 1080px; margin-right: 209px;"><a href="https://www.skoolooks.com/goods/catalog?code=000200030002"><img src="./스쿨룩스_files/img_main_banner_14.jpg" alt=""></a></div>
+            <div style="float: left; list-style: none; position: relative; width: 1080px; margin-right: 209px;"><a href="https://www.skoolooks.com/goods/catalog?code=000200030002"><img src="./스쿨룩스_files/img_main_banner_15.jpg" alt=""></a></div>
+            <div style="float: left; list-style: none; position: relative; width: 1080px; margin-right: 209px;"><a href="http://blog.naver.com/skoolooks3/222086491291" target="_blank"><img src="./스쿨룩스_files/img_main_banner_16.jpg" alt=""></a></div>
+        <div style="float: left; list-style: none; position: relative; width: 1080px; margin-right: 209px;" class="bx-clone"><a href="https://www.skoolooks.com/goods/brand?code=0003"><img src="./스쿨룩스_files/img_main_banner_18.jpg" alt=""></a></div><div style="float: left; list-style: none; position: relative; width: 1080px; margin-right: 209px;" class="bx-clone"><a href="https://skoolooks.com/board/view?id=notice&amp;seq=641"><img src="./스쿨룩스_files/img_main_banner_12.jpg" alt=""></a></div></div></div><div class="bx-controls bx-has-pager bx-has-controls-direction"><div class="bx-pager bx-default-pager"><div class="bx-pager-item"><a href="https://www.skoolooks.com/" data-slide-index="0" class="bx-pager-link">1</a></div><div class="bx-pager-item"><a href="https://www.skoolooks.com/" data-slide-index="1" class="bx-pager-link">2</a></div><div class="bx-pager-item"><a href="https://www.skoolooks.com/" data-slide-index="2" class="bx-pager-link active">3</a></div><div class="bx-pager-item"><a href="https://www.skoolooks.com/" data-slide-index="3" class="bx-pager-link">4</a></div><div class="bx-pager-item"><a href="https://www.skoolooks.com/" data-slide-index="4" class="bx-pager-link">5</a></div><div class="bx-pager-item"><a href="https://www.skoolooks.com/" data-slide-index="5" class="bx-pager-link">6</a></div></div><div class="bx-controls-direction"><a class="bx-prev" href="https://www.skoolooks.com/">Prev</a><a class="bx-next" href="https://www.skoolooks.com/">Next</a></div></div></div>
+
+        <div class="main_market_box">
+            <h2 class="main_market_ti"><img src="./스쿨룩스_files/img_main_market_ti.png" alt="마켓스쿨"></h2>
+
+            <div class="main_market_tx">오직! 스쿨룩스에서만 볼수있는 핫 아이템!</div>
+
+            <div class="main_market_slider_box">
+                <h3 class="main_market_slider_ti">베스트<br>아이템</h3>
+
+                <div class="main_market_best"><img src="./스쿨룩스_files/img_main_market_best.png" alt="best"></div>
+
+                <div class="bx-wrapper" style="max-width: 1080px;"><div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 0px;"><div class="main_market_slider" style="width: auto; position: relative;">
+                            <div style="float: none; list-style: none; position: absolute; width: 1080px; z-index: 0; display: none;">
+                                <div class="market_slide_tx">
+                                    <div class="prod_name"><a href="https://www.skoolooks.com/goods/view?no=44">인덱스스프링노트_미키와친구들</a></div>
+                                    <div class="prod_val">12,000<span class="unit">원</span></div>
+                                </div>
+
+                                <div class="market_slide_img"><a href="https://www.skoolooks.com/goods/view?no=44"><img src="./스쿨룩스_files/44_tmp_02d040f98a379e6493e2ce27ac4517537386list1.png" alt="인덱스스프링노트_미키와친구들"></a></div>
+                            </div>
+                            <div style="float: none; list-style: none; position: absolute; width: 1080px; z-index: 0; display: none;">
+                                <div class="market_slide_tx">
+                                    <div class="prod_name"><a href="https://www.skoolooks.com/goods/view?no=42">데스크매트_푸</a></div>
+                                    <div class="prod_val">12,000<span class="unit">원</span></div>
+                                </div>
+
+                                <div class="market_slide_img"><a href="https://www.skoolooks.com/goods/view?no=42"><img src="./스쿨룩스_files/42_tmp_d5bc73c4f71694b7d5d01ebca55f661d7948list1.png" alt="데스크매트_푸"></a></div>
+                            </div>
+                            <div style="float: none; list-style: none; position: absolute; width: 1080px; z-index: 50;">
+                                <div class="market_slide_tx">
+                                    <div class="prod_name"><a href="https://www.skoolooks.com/goods/view?no=45">인덱스스프링노트_위니더푸</a></div>
+                                    <div class="prod_val">12,000<span class="unit">원</span></div>
+                                </div>
+
+                                <div class="market_slide_img"><a href="https://www.skoolooks.com/goods/view?no=45"><img src="./스쿨룩스_files/45_tmp_34d723304dfc9468344ab2542d2caa9a2478list1.png" alt="인덱스스프링노트_위니더푸"></a></div>
+                            </div>
+                </div></div><div class="bx-controls bx-has-pager"><div class="bx-pager bx-default-pager"><div class="bx-pager-item"><a href="https://www.skoolooks.com/" data-slide-index="0" class="bx-pager-link">1</a></div><div class="bx-pager-item"><a href="https://www.skoolooks.com/" data-slide-index="1" class="bx-pager-link">2</a></div><div class="bx-pager-item"><a href="https://www.skoolooks.com/" data-slide-index="2" class="bx-pager-link active">3</a></div></div></div></div>
+            </div>
+        </div>
+
+        <div class="main_month_pick_box">
+            <h2 class="main_month_pick_ti"><img src="./스쿨룩스_files/img_main_month_pick_ti.png" alt="이달의 PICK"></h2>
+
+            <div class="month_pick_thumb_box">
+                <div class="main_pick_thumb_box">
+                    <div class="img_main_pick_thumb"><img src="./스쿨룩스_files/img_main_pick_thumb2.jpg" alt=""></div>
+
+                    <div class="main_pick_tx_box">
+                        <h3 class="main_pick_ti">이달의 PICK!</h3>
+
+                        <div class="line"></div>
+
+                        <div class="main_pick_tx">찰떡궁합 디즈니 세트로<br>2학기 준비 완료!</div>
+
+                        <a href="https://www.skoolooks.com/goods/brand?code=0003">전체보기<span><img src="./스쿨룩스_files/btn_main_pick_arrow.png" alt=""></span></a>
+                    </div>
+                </div>
+
+                <div class="other_pick_thumb_box">
+                            <div class="other_pick_thumb"><a href="https://www.skoolooks.com/goods/view?no=55"><img src="./스쿨룩스_files/55_tmp_f272f871fb3ea61300fe5dbc9d9cae042616list1.png" alt="매트와 노트 세트_미키"></a></div>
+                            <div class="other_pick_thumb"><a href="https://www.skoolooks.com/goods/view?no=59"><img src="./스쿨룩스_files/59_tmp_3c79d4de389349e404f266745337ab329560list1.png" alt="책상 데코 세트_푸"></a></div>
+                            <div class="other_pick_thumb"><a href="https://www.skoolooks.com/goods/view?no=63"><img src="./스쿨룩스_files/63_tmp_940dd21daaf7c5aa832eea0c10a4284b3561list1.png" alt="2학기 필기 세트_스파이더맨/마블"></a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main_con_box">
+            <div class="bg_main_lineup"></div>
+            <div class="main_lineup_box">
+                <h2 class="main_lineup_box_ti"><span>어서와!</span><br>스쿨룩스는 처음이지?</h2>
+
+                <p class="main_lineup_box_tx">스쿨룩스는 1318들과 끊임없는 교감을 통해<br>학생들의 꿈과 희망, 자유를 지향하는 리딩 브랜드입니다.</p>
+
+                <div class="style_sel_box_wrap">
+                    <div class="style_sel_box simple">
+                        <div class="bg_style_sel_model"><img src="./스쿨룩스_files/img_main_style_simple_none.png" alt=""></div>
+                        <div class="img_style_sel_uniform"><img src="./스쿨룩스_files/img_main_style_simple_uniform_summer.jpg" alt=""></div>
+
+                        <div class="style_sel_tx_box">
+                            <h3>편한교복 스타일</h3>
+
+                            <p>교복의 정석 스쿨룩스만의<br>편안한 스타일을 확인해보세요!</p>
+
+                            <a href="https://www.skoolooks.com/skls/lineupComfort">전체보기<span><img src="./스쿨룩스_files/btn_main_lineup_arrow.png" alt=""></span></a>
+                        </div>
+                    </div>
+                    <div class="style_sel_box suit">
+                        <div class="bg_style_sel_model"><img src="./스쿨룩스_files/img_main_style_suit_none.png" alt=""></div>
+                        <div class="img_style_sel_uniform"><img src="./스쿨룩스_files/img_main_style_suit_uniform_summer.jpg" alt=""></div>
+
+                        <div class="style_sel_tx_box">
+                            <h3>정장하복 스타일</h3>
+
+                            <p>교복의 정석 스쿨룩스만의<br>깔끔 발랄한 스타일을 확인해보세요!</p>
+
+                            <a href="https://www.skoolooks.com/skls/lineupSuitGirlSummer">전체보기<span><img src="./스쿨룩스_files/btn_main_lineup_arrow.png" alt=""></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main_btn_box">
+                <div class="bg_main_btn_box contact"></div>
+                <div class="bg_main_btn_box store"></div>
+                <div class="main_btn_box_inner">
+                    <a href="https://www.skoolooks.com/mypage/myqna_write" class="pos_lt">
+                        <img src="./스쿨룩스_files/btn_main_link_contact.jpg" alt="">
+                        <div class="btn_main_link_img"><img src="./스쿨룩스_files/btn_main_link_contact_img_none.png" alt=""></div>
+                    </a>
+                    <a href="https://www.skoolooks.com/skls/findstore" class="pos_rt">
+                        <img src="./스쿨룩스_files/btn_main_link_store.jpg" alt="">
+                        <div class="btn_main_link_img"><img src="./스쿨룩스_files/btn_main_link_store_img_none.png" alt=""></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript">
+	var sklsPageName = "index";
+
+    var slide_color = ["#f89828","#f89828","#f89828"];
+    var main_bx = $('#main .bxslider').bxSlider({
+        speed: 700,
+        slideWidth: 1080,
+        slideMargin: 209,
+        minSlides: 1,
+        maxSlides: 2,
+        moveSlides: 1,
+        touchEnabled: true,
+        auto: true,
+        pause: 4000,
+        onSliderLoad: function(){
+            slide_resize();
+        },
+        onSlideBefore: function(){
+            var current_index = main_bx.getCurrentSlide();
+            $("#main .bg_main_slide").stop(true,false).animate({"backgroundColor":slide_color[current_index]},500);
+        }
+    });
+
+    var main_market_bx = $('#main .main_market_slider').bxSlider({
+        mode: 'fade',
+        slideWidth: 1080,
+        controls: false,
+        touchEnabled: true,
+        auto: true,
+        pause: 5000
+    });
+
+    $(window).resize(function(){
+        slide_resize();
+    });
+
+    $(window).scroll(function(){
+        if($(this).scrollTop() > 0){
+            $("header .header_top").fadeOut(100);
+            $("header .header_scroll").fadeIn(100);
+        }else{
+            $("header .header_scroll").fadeOut(300);
+            $("header .header_top").fadeIn(300);
+        }
+    });
+
+    function slide_resize(){
+        var main_slide_wid = ($("#main").width() - $("#main .bx-wrapper .bxslider > div").width()) / 2;
+        $("#main .bx-wrapper .bxslider").css({"margin-left":main_slide_wid});
+    }
+</script>
+
+<!-- popup -->
+<!-- <link rel="stylesheet" href="/data/skin/skoolooks/css/skls/popup.css?v=202005151742" /> -->
+
+<!-- <div id="popup200515" class="popup">
+    <div class="popup200515_img">
+        <div class="alt">
+            <h2>스쿨룩스는 <em>긴급재난지원금</em> 사용가능 매장입니다</h2>
+            <h4>스쿨룩스 매장에서는<br/>
+                긴급재난지원금을 사용할 수 있습니다.</h4>
+
+            <p>직영점 및 기준 매출을 초과하는 대리점에서는<br/>
+                사용이 불가할 수 있으니, 참고 바랍니다.</p>
+        </div>
+
+        <a href="/skls/findstore" class="btn_findstore"><span class="alt">가까운 매장 찾아보기</span></a>
+    </div>
+
+    <div class="popup200515_btngroup">
+        <a href="javascript:void(0);" class="btn_today" onclick="popToggleToday('#popup200515');"><span class="alt">오늘하루 열지 않기</span></a>
+        <a href="javascript:void(0);" class="btn_close" onclick="popClose('#popup200515');"><span class="alt">닫기</span></a>
+    </div>
+</div> -->
+
+<script type="text/javascript">
+	$(function(){
+		// if(getCookie("popup200515") != 1){
+		// 	$("#popup200515").show();
+		// }
+	});
+
+	function popToggleToday(t_name){
+		if($(t_name).find(".btn_today").is(".active") == true){
+			$(t_name).find(".btn_today").removeClass("active");
+		}else{
+			$(t_name).find(".btn_today").addClass("active");
+		}
+	}
+
+	function popClose(t_name){
+		var t_cookie = t_name.replace("#","");
+		if($(t_name).find(".btn_today").is(".active") == true){
+			setCookie(t_cookie,1,1);
+		}
+		$(t_name).hide();
+	}
+
+	function setCookie(c_name,value,exdays){
+		var exdate = new Date();
+			exdate.setDate(exdate.getDate() + exdays);
+			exdate.setHours(0);
+			exdate.setMinutes(0);
+			exdate.setSeconds(0);
+		var c_value = escape(value) + ((exdays==null) ? "" : "; expires=" + exdate.toUTCString());
+		document.cookie = c_name + "=" + c_value;
+	}
+
+	function getCookie(c_name){
+		var i,x,y,ARRcookies = document.cookie.split(";");
+		for(i = 0; i < ARRcookies.length; i++){
+			x = ARRcookies[i].substr(0,ARRcookies[i].indexOf("="));
+			y = ARRcookies[i].substr(ARRcookies[i].indexOf("=")+1);
+			x = x.replace(/^\s+|\s+$/g,"");
+			if(x == c_name){
+				return unescape(y);
+			}
+		}
+	}
+</script>
+<!-- //popup -->
+
+<footer>
+	<div class="footer_wrap top">
+		<div class="footer_inner">
+			<div class="footer_logo">
+				<img src="./스쿨룩스_files/img_footer_logo.png" alt="스쿨룩스 로고">
+			</div>
+			<div class="footer_link">
+				<div>
+					<a href="https://www.skoolooks.com/service/agreement">이용약관</a>
+					<a href="https://www.skoolooks.com/service/privacy">개인정보취급방침</a>
+					<a href="https://www.skoolooks.com/board/?id=cooper">제휴문의</a>
+					<a href="https://www.skoolooks.com/board/?id=agency">대리점 개설문의</a>
+					<a href="https://www.skoolooks.com/skls/location">찾아오시는 길</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer_wrap bottom">
+		<div class="footer_inner">
+			<div class="footer_tx">
+				<div class="footer_tx_inner">
+					<p><span>회사명</span>&nbsp;&nbsp;(주)더엔진</p>
+					<p><span>대표이사</span>&nbsp;&nbsp;오현택</p>
+					<p><span>주소</span>&nbsp;&nbsp;서울특별시 성동구 아차산로11가길 3, 3층</p>
+					<p><span>사업자등록번호</span>&nbsp;&nbsp;214-87-53150</p>
+				</div>
+				<div class="footer_tx_inner">
+					<p><span>통신판매업신고</span>&nbsp;&nbsp;2019-서울성동-01764</p>
+					<p><span>개인정보 관리책임자</span>&nbsp;&nbsp;김율</p>
+				</div>
+				<div class="footer_tx_inner">
+					<p><span>이메일</span>&nbsp;&nbsp;webmaster@skoolooks.com</p>
+				</div>
+			</div>
+			<div class="footer_tel"><span>대표 번호</span>&nbsp;&nbsp;1588-3066</div>
+			<p class="copyright">© 2019. SKOOLOOKS All rights reserved.</p>
+
+			<div class="footer_sns">
+				<a href="http://www.skoolooksblog.com/" target="_blank" class="btn_nav_link_blog"><img src="./스쿨룩스_files/icon_ft_blog.png" alt="블로그"></a>
+				<a href="https://www.facebook.com/skoolooks" target="_blank" class="btn_nav_link_fb"><img src="./스쿨룩스_files/icon_ft_fb.png" alt="페이스북"></a>
+				<a href="https://www.instagram.com/skoolooks_insta" target="_blank" class="btn_nav_link_insta"><img src="./스쿨룩스_files/icon_ft_insta.png" alt="인스타그램"></a>
+				<a href="https://www.youtube.com/user/skoolooks1318" target="_blank" class="btn_nav_link_youtube"><img src="./스쿨룩스_files/icon_ft_youtube.png" alt="유튜브"></a>
+			</div>
+		</div>
+	</div>
+</footer>
+
+	<div style="height:0;overflow:hidden;"><iframe name="actionFrame" id="actionFrame" src="./스쿨룩스_files/blank.html" frameborder="0" width="100%" height="0"></iframe></div>
+	<div id="openDialogLayer" style="display:none">
+		<div align="center" id="openDialogLayerMsg"></div>
+	</div>
+	<div id="ajaxLoadingLayer" style="display:none"></div>
+</div>
+
+<div id="changePassForm" class="popup_comm popup_changepw_comm">
+	<a class="btn_popup_close" href="https://www.skoolooks.com/#close"><img src="./스쿨룩스_files/btn_popup_close.png" alt="닫기"></a>
+
+	<h2 class="popup_ti">비밀번호 변경</h2>
+	<p class="popup_tx">개인정보 보호를 위하여 비밀번호를 변경해주세요.</p>
+
+	<div class="popup_changepw_box">
+		<form id="passUpdateForm" method="post" action="https://www.skoolooks.com/login_process/popup_change_pass" target="actionFrame" onsubmit="return skls_changePassSubmit();">
+			<input type="hidden" name="password_mode" value="update">
+			<input type="hidden" name="update_rate" value="">
+
+			<fieldset>
+				<legend class="alt">비밀번호 변경 폼</legend>
+
+				<div class="input_comm_box old_password_box">
+					<label for="changepw_old_password" class="label_comm">현재 비밀번호*</label>
+					<input type="password" class="input_comm input_w1" name="old_password" id="changepw_old_password" value="" maxlength="20" placeholder="현재 비밀번호를 입력해주세요." onkeyup="maxLengthCheck(this);" onchange="maxLengthCheck(this);">
+				</div>
+
+				<div class="input_comm_box">
+					<label for="changepw_new_password" class="label_comm">새 비밀번호*</label>
+					<input type="password" class="input_comm input_w1" name="new_password" id="changepw_new_password" value="" maxlength="20" placeholder="6자~20자 / 영문, 숫자, 특수문자 2개이상 조합" onkeyup="maxLengthCheck(this);" onchange="skls_changePassCheck(this);">
+				</div>
+
+				<div class="input_comm_box">
+					<label for="changepw_re_new_password" class="label_comm">새 비밀번호 확인</label>
+					<input type="password" class="input_comm input_w1" name="re_new_password" id="changepw_re_new_password" value="" maxlength="20" onkeyup="maxLengthCheck(this);" onchange="skls_changePassCheck(this);">
+				</div>
+
+				<p class="input_chk_pw"></p>
+
+				<div class="btn_comm_box">
+					<button type="button" onclick="skls_passwordAfterUpdate();" class="btn_comm_3 pos_lt">다음에 변경하기</button>
+					<input type="submit" name="change_password" id="change_password" value="변경 완료" class="btn_comm_2 pos_rt">
+				</div>
+			</fieldset>
+		</form>
+
+		<p class="notice_comm">※ 비밀번호는 주기적(최소 3개월)으로 변경하는 것이 좋으며,<br>
+			타 사이트와 동일한 비밀번호 사용시 개인정보 노출 및 도용될 우려가 있습니다.</p>
+	</div>
+</div>
+
+<!-- 네이버 프리미엄 로그 분석 : 공통 적용 스크립트 , 모든 페이지에 노출되도록 설치. 단 전환페이지 설정값보다 항상 하단에 위치해야함 -->
+<script type="text/javascript" src="./스쿨룩스_files/wcslog.js.다운로드"> </script>
+<script type="text/javascript">
+if (!wcs_add) var wcs_add={};
+wcs_add["wa"] = "s_1f11464e9516";
+if (!_nasa) var _nasa={};
+wcs.inflow();
+wcs_do(_nasa);
+</script>
+
+<!-- LOGGER(TM) TRACKING SCRIPT V.40 FOR logger.co.kr / 22168 : COMBINE TYPE / DO NOT ALTER THIS SCRIPT. -->
+<script type="text/javascript">var _TRK_LID = "22168";var _L_TD = "ssl.logger.co.kr";var _TRK_CDMN = ".skoolooks.com";</script>
+<script type="text/javascript">var _CDN_DOMAIN = location.protocol == "https:" ? "https://fs.bizspring.net" : "http://fs.bizspring.net";
+(function (b, s) { var f = b.getElementsByTagName(s)[0], j = b.createElement(s); j.async = true; j.src = '//fs.bizspring.net/fs4/bstrk.1.js'; f.parentNode.insertBefore(j, f); })(document, 'script');
+</script>
+<noscript><img alt="Logger Script" width="1" height="1" src="http://ssl.logger.co.kr/tracker.1.tsp?u=22168&js=N"/></noscript>
+<!-- END OF LOGGER TRACKING SCRIPT -->
+
+<!-- ACE Trader Script -->
+<script type="text/javascript" src="./스쿨룩스_files/1530"></script>
+<script type="text/javascript">
+ window.ne_tgm_q = window.ne_tgm_q || [];
+ window.ne_tgm_q.push(
+ {
+ 	tagType: 'visit',
+ 	device:'web'/*web, mobile, tablet*/,
+ 	uniqValue:'',
+ 	pageEncoding:'utf-8'
+ });
+ </script>
+
+
+
+<iframe id="ne_tgmiframe_0" width="0" height="0" style="position:absolute;width:0px;height:0px;display:none;" src="./스쿨룩스_files/saved_resource.html"></iframe></body></html>
