@@ -8,6 +8,7 @@ html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockqu
 	color:inherit;
 	font-size:inherit;
 	font-family: "Noto Sans KR";
+	font-family: 'Noto Sans KR', sans-serif;
 }
 body{font-size:14px; color:#000}
 /* HTML5 display-role reset for older browsers */
