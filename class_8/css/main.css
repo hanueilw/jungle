@@ -44,7 +44,11 @@
     margin-right: -600px;
     background: url(../img/main/btn_slide_main_next.png) no-repeat center center;
 }
-.section.visual .bx-wrapper .bx-controls-direction a.bx-prev {}
+.section.visual .bx-wrapper .bx-controls-direction a.bx-prev {
+    left:50%;
+    margin-left: -600px;
+    background: url(../img/main/btn_slide_main_prev.png) no-repeat center center;
+}
 .section.visual .bx-wrapper .bx-pager {}
 .section.visual .bx-wrapper .bx-pager.bx-default-pager a {}
 .section.visual .bx-wrapper .bx-pager.bx-default-pager a.active {}

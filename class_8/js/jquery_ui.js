@@ -3,10 +3,14 @@ $(function(){
 	
 
 	//네비 열기
-	
+	$(".header .btn_nav").click(function(){
+		$(".header .navi_area").addClass("on");
+	})
 
 	//네비 닫기
-
+	$(".header .btn_nav_close").click(function(){
+		$(".header .navi_area").removeClass("on");
+	})
 
 	//메인 베너 슬라이드
 	  $(".section.visual > ul").bxSlider({
